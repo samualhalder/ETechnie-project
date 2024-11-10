@@ -41,6 +41,7 @@ export default function Header() {
               <Button
                 onClick={() => {
                   localStorage.removeItem("access-token");
+                  setToken(null);
                   router.refresh();
                 }}
               >
